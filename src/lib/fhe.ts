@@ -24,10 +24,10 @@ export async function initializeFHE(): Promise<FhevmInstance> {
       aclAddress: CONFIG.aclAddress,
     });
 
-    console.log("✅ FHE initialized successfully");
+    console.log("FHE initialized successfully");
     return fhevmInstance;
   } catch (error) {
-    console.error("❌ FHE initialization failed:", error);
+    console.error("FHE initialization failed:", error);
     throw error;
   }
 }
